@@ -1,2 +1,2 @@
 # Kasyno
-Project for Web project
+Project for Web Laboratory.
