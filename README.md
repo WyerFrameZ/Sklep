@@ -1,7 +1,21 @@
-# 🚗💎 Handlowo-Kasynowa Strona Internetowa  
+# 💎 SKLEP
 
 ## 🎰 O projekcie  
-Ten projekt to nowoczesna i innowacyjna strona internetowa, łącząca w sobie funkcje **platformy handlowej** i **kasyna online**. 
+Ten projekt to nowoczesny sklep 
+
+# Postawienie bazy danych:
+1.uTWORZENIE BAzy danych
+```sql
+CREATE DATABASE sklep;
+```
+2.Utworzenie tabeli urzytkownicy:
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    login VARCHAR(50) NOT NULL UNIQUE,
+    haslo VARCHAR(255) NOT NULL
+);
+```
 
 ### 🌟 Kluczowe funkcje:
 1. **Handel samochodami**:
