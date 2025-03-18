@@ -16,6 +16,18 @@ CREATE TABLE users (
     haslo VARCHAR(255) NOT NULL
 );
 ```
+3.Utworzenie tabeli `produkty`
+```sql
+CREATE TABLE `produkty` (
+  `id` int(11) NOT NULL,
+  `nazwa` varchar(100) NOT NULL,
+  `cena` decimal(10,2) NOT NULL,
+  `opis` text DEFAULT NULL,
+  `zdjecie` varchar(255) DEFAULT NULL,
+  `kategoria` varchar(50) NOT NULL,
+  `data_dodania` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+```
 
 ### 🌟 Kluczowe funkcje:
 1. **Handel samochodami**:
