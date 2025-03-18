@@ -4,11 +4,11 @@
 Ten projekt to nowoczesny sklep 
 
 # Postawienie bazy danych:
-1.uTWORZENIE BAzy danych
+1.Utworzenie bazy `sklep`
 ```sql
 CREATE DATABASE sklep;
 ```
-2.Utworzenie tabeli urzytkownicy:
+2.Utworzenie tabeli `urzytkownicy`
 ```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
