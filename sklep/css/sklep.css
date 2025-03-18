@@ -1,0 +1,26 @@
+
+
+        .container { 
+            width: 80%; 
+            margin: auto; 
+        }
+        .produkty { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center; 
+        }
+        .produkt { 
+            background: white; 
+            padding: 15px; 
+            width: 200px; 
+            border-radius: 10px; 
+            box-shadow: 2px 2px 10px #ccc; 
+            text-align: center; 
+        }
+        .produkt img { 
+            max-width: 100%; 
+            border-radius: 5px; 
+        }
+
+    
