@@ -85,6 +85,12 @@ $search_query = isset($_GET['search']) ? $_GET['search'] : '';
         </section>
 
         <div class="navbar">
+        <div class="search-container">
+        <form action="sklep.php" method="GET" style="display: flex; width: 100%;">
+            <input type="text" name="search" class="search-input" placeholder="Wyszukaj produkt..." value="<?= htmlspecialchars($search_query) ?>">
+            <button type="submit" class="search-button">Szukaj</button>
+        </form>
+    </div>
             <section class="end">
                 <?php 
                     $isLoggedIn = isset($_SESSION['user']);
@@ -106,13 +112,7 @@ $search_query = isset($_GET['search']) ? $_GET['search'] : '';
         </div>
 
     </section>
-    
-    <div class="search-container">
-        <form action="sklep.php" method="GET" style="display: flex; width: 100%;">
-            <input type="text" name="search" class="search-input" placeholder="Wyszukaj produkt..." value="<?= htmlspecialchars($search_query) ?>">
-            <button type="submit" class="search-button">Szukaj</button>
-        </form>
-    </div>
+
     
     <?php if (!empty($search_query)): ?>
     <h2>Wyniki wyszukiwania dla: "<?= htmlspecialchars($search_query) ?>"</h2>
