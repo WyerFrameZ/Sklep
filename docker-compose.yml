@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "95:80"
+    volumes:
+      - ./public_html:/var/www/html/public_html
+    depends_on:
+      - db
+    environment:
+      - DOCKER_ENV=true
+
+  db:
+    image: mysql:5.7
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: ZSKZSKZSK
+      MYSQL_DATABASE: sklep
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./docker-files/setup.sql:/docker-entrypoint-initdb.d/setup.sql
+    ports:
+      - "3307:3306"
+
+volumes:
+  db_data: 
